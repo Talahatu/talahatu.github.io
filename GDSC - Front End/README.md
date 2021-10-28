@@ -1,5 +1,5 @@
 SS tampilan utama website:
-![tampilan.jpg](tampilan.jpg)
+![tampilan.JPG](tampilan.JPG)
 
 Fitur-fitur dan detail page:
 
