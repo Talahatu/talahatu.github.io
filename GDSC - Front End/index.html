@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CATALOGUE</title>
+
+        <!-- Hubungkan style.css -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- favicon -->
+        <link
+            rel="shortcut icon"
+            href="../img/favicon.png"
+            type="image/x-icon"
+        />
+
+        <!-- Font Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+Mono&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat+Alternates:wght@100;200;400&family=Montserrat:wght@200&family=Roboto:wght@100;400&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <ul>
+                <li id="home">Home</li>
+                <li id="movie-text">Movie</li>
+                <li id="logout">Logout</li>
+                <!-- <li>
+                    <div class="search-container">
+                        <form action="">
+                            <input type="text" placeholder="Search..." />
+                        </form>
+                    </div>
+                </li> -->
+            </ul>
+
+            <h1 id="brandName">CATALOGUE</h1>
+        </header>
+
+        <!-- Template Modal Box -->
+        <div class="overlay" id="overlay" onclick="CloseModalBox()"></div>
+        <div class="modal-template" id="modal-template">
+            <div class="modal-top-half" id="modal-top-half">
+                <span class="close-modal" onclick="CloseModalBox()"
+                    >&times;</span
+                >
+                <!-- <img src="/img/Full/Brave.jpg" alt="" class="modal-image" /> -->
+                <h1 class="modal-movie-name">This is movie name!</h1>
+                <h2 class="modal-movie-rating">This is movie rating!</h2>
+            </div>
+            <div class="modal-low-half">
+                <h1>Description :</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quod optio possimus quos. Iste, esse. Laboriosam officia,
+                    neque, esse quas est dolor laudantium inventore sed,
+                    repellat magnam numquam asperiores molestiae? Ex!
+                </p>
+            </div>
+        </div>
+
+        <!-- Moving Picture in Home -->
+        <section class="hero">
+            <!-- <h1>The Best Movie Catalog</h1> -->
+            <div class="hero-image" id="hero-image"></div>
+        </section>
+
+        <!-- Movie list -->
+        <section class="content">
+            <h1 style="color: white; margin-top: 25px; margin-bottom: 10px">
+                Movie List
+            </h1>
+            <div class="movie-list">
+                <ul>
+                    <li>
+                        <div class="movie" onclick="OpenModalBox(this)">
+                            <div class="movie-image">
+                                <img
+                                    src="img/Thumbnail/brave.jpg"
+                                    alt="brave"
+                                />
+                            </div>
+                            <h3>Brave</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie" onclick="OpenModalBox(this)">
+                            <div class="movie-image">
+                                <img
+                                    src="img/Thumbnail/wall-e.jpg"
+                                    alt="wall-e"
+                                />
+                            </div>
+
+                            <h3>Wall-E</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie" onclick="OpenModalBox(this)">
+                            <div class="movie-image">
+                                <img
+                                    src="img/Thumbnail/interstellar.jpg"
+                                    alt="interstellar"
+                                />
+                            </div>
+
+                            <h3>Interstellar</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie" onclick="OpenModalBox(this)">
+                            <div class="movie-image">
+                                <img
+                                    src="img/Thumbnail/fate-zero.jpg"
+                                    alt="fate-zero"
+                                />
+                            </div>
+
+                            <h3>Fate/Zero</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie" onclick="OpenModalBox(this)">
+                            <div class="movie-image">
+                                <img
+                                    src="img/Thumbnail/garden-of-sinner.jpg"
+                                    alt="garden-of-sinner"
+                                />
+                            </div>
+
+                            <h3>Garden Of Sinner</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie" onclick="OpenModalBox(this)">
+                            <div class="movie-image">
+                                <img src="img/Thumbnail/howl.jpg" alt="howl" />
+                            </div>
+
+                            <h3>Howl Moving Castle</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie" onclick="OpenModalBox(this)">
+                            <div class="movie-image">
+                                <img src="img/Thumbnail/jaws.jpg" alt="jaws" />
+                            </div>
+
+                            <h3>Jaws</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie" onclick="OpenModalBox(this)">
+                            <div class="movie-image">
+                                <img
+                                    src="img/Thumbnail/joker.jpg"
+                                    alt="joker"
+                                />
+                            </div>
+
+                            <h3>Joker</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie" onclick="OpenModalBox(this)">
+                            <div class="movie-image">
+                                <img src="img/Thumbnail/oz.jpg" alt="oz" />
+                            </div>
+
+                            <h3>Oz The Great And Powerful (2013)</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie" onclick="OpenModalBox(this)">
+                            <div class="movie-image">
+                                <img
+                                    src="img/Thumbnail/princess-mononoke.jpg"
+                                    alt="princess-mononoke"
+                                />
+                            </div>
+
+                            <h3>Princess Mononoke</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie" onclick="OpenModalBox(this)">
+                            <div class="movie-image">
+                                <img
+                                    src="img/Thumbnail/promare.jpg"
+                                    alt="promare"
+                                />
+                            </div>
+
+                            <h3>Promare</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie" onclick="OpenModalBox(this)">
+                            <div class="movie-image">
+                                <img
+                                    src="img/Thumbnail/sharknado.jpg"
+                                    alt="sharknado"
+                                />
+                            </div>
+
+                            <h3>Sharknado</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="movie" onclick="OpenModalBox(this)">
+                            <div class="movie-image">
+                                <img
+                                    src="img/Thumbnail/the-godfather.jpg"
+                                    alt="the-godfather"
+                                />
+                            </div>
+
+                            <h3>The Godfather</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Made by Me Footer -->
+        <footer>
+            <h3>Made by Michael Talahatu</h3>
+            <div class="boxes"></div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
